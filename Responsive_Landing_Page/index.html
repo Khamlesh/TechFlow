@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechFlow - Revolutionary Software Solutions</title>
+    <meta name="description" content="Transform your business with TechFlow's revolutionary software solutions. Streamline operations, boost productivity, and drive growth.">
+    <meta name="keywords" content="software solutions, business automation, productivity tools, enterprise software">
+    <meta name="author" content="TechFlow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="TechFlow - Revolutionary Software Solutions">
+    <meta property="og:description" content="Transform your business with TechFlow's revolutionary software solutions.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://techflow.com">
+    <meta property="og:image" content="https://techflow.com/og-image.jpg">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="TechFlow - Revolutionary Software Solutions">
+    <meta name="twitter:description" content="Transform your business with TechFlow's revolutionary software solutions.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Swiper CSS for testimonials carousel -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+</head>
+<body>
+    <!-- Cookie Consent Bar -->
+    <div id="cookie-consent" class="cookie-consent">
+        <div class="cookie-content">
+            <p>We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.</p>
+            <div class="cookie-buttons">
+                <button id="accept-cookies" class="btn btn-primary">Accept</button>
+                <button id="decline-cookies" class="btn btn-secondary">Decline</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-code"></i>
+                <span>TechFlow</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#features" class="nav-link">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials" class="nav-link">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-controls">
+
+                
+                <!-- Dark Mode Toggle -->
+                <button id="dark-mode-toggle" class="dark-mode-toggle">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                </button>
+                
+                <!-- Mobile Menu Toggle -->
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Video Background -->
+    <section id="home" class="hero">
+        <div class="hero-video-bg">
+            <video autoplay muted loop id="hero-video">
+                <source src="https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content" data-aos="fade-up">
+                <h1 class="hero-title">
+                    Transform Your Business with 
+                    <span class="highlight typewriter" id="typewriter"></span>
+                </h1>
+                <p class="hero-subtitle">Revolutionary software solutions that streamline operations, boost productivity, and drive growth for modern businesses.</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary animated-btn">
+                        <span>Get Started Free</span>
+                        <i class="fas fa-rocket"></i>
+                    </button>
+                    <button class="btn btn-secondary">
+                        <i class="fas fa-play"></i>
+                        Watch Demo
+                    </button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="10000">0</span>
+                        <span class="stat-label">Happy Customers</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="99">0</span>
+                        <span class="stat-label">% Uptime</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="24">0</span>
+                        <span class="stat-label">/7 Support</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image" data-aos="fade-left">
+                <div class="hero-graphic">
+                    <i class="fas fa-rocket"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section with Enhanced Animations -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Why Choose TechFlow?</h2>
+                <p>Discover the powerful features that make us the preferred choice for businesses worldwide</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Lightning Fast</h3>
+                    <p>Optimized performance that keeps your business running at peak efficiency with minimal downtime.</p>
+                    <div class="feature-demo">
+                        
+                    </div>
+                    <div class="feature-tooltip">
+                        <i class="fas fa-info-circle"></i>
+                        <span class="tooltip-text">99.9% uptime guarantee with sub-second response times</span>
+                    </div>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Enterprise Security</h3>
+                    <p>Bank-level security protocols protect your data with advanced encryption and compliance standards.</p>
+                    <div class="feature-demo">
+                       
+                    </div>
+                    <div class="feature-tooltip">
+                        <i class="fas fa-info-circle"></i>
+                        <span class="tooltip-text">SOC 2 Type II certified with end-to-end encryption</span>
+                    </div>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile First</h3>
+                    <p>Responsive design that works seamlessly across all devices, from smartphones to desktops.</p>
+                    <div class="feature-demo">
+                        
+                    </div>
+                    <div class="feature-tooltip">
+                        <i class="fas fa-info-circle"></i>
+                        <span class="tooltip-text">Native mobile apps for iOS and Android available</span>
+                    </div>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Analytics Dashboard</h3>
+                    <p>Comprehensive insights and real-time analytics to make data-driven business decisions.</p>
+                    <div class="feature-demo">
+                        
+                    </div>
+                    <div class="feature-tooltip">
+                        <i class="fas fa-info-circle"></i>
+                        <span class="tooltip-text">Real-time dashboards with customizable widgets</span>
+                    </div>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Team Collaboration</h3>
+                    <p>Built-in tools for seamless team communication and project management.</p>
+                    <div class="feature-demo">
+                       
+                    </div>
+                    <div class="feature-tooltip">
+                        <i class="fas fa-info-circle"></i>
+                        <span class="tooltip-text">Built-in chat, video calls, and project tracking</span>
+                    </div>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>Round-the-clock customer support to help you succeed with our platform.</p>
+                    <div class="feature-demo">
+                       
+                    </div>
+                    <div class="feature-tooltip">
+                        <i class="fas fa-info-circle"></i>
+                        <span class="tooltip-text">Live chat, phone, and email support available</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section with Carousel -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>What Our Clients Say</h2>
+                <p>Join thousands of satisfied customers who trust TechFlow</p>
+            </div>
+            
+            <!-- Testimonial Filter -->
+            <div class="testimonial-filter" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="all">All Reviews</button>
+                <button class="filter-btn" data-filter="5">5 Stars</button>
+                <button class="filter-btn" data-filter="4">4+ Stars</button>
+                <button class="filter-btn" data-filter="feature">Featured</button>
+            </div>
+            
+            <!-- Swiper Testimonials Carousel -->
+            <div class="swiper testimonials-swiper" data-aos="fade-up">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide testimonial-card" data-rating="5" data-featured="true">
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"TechFlow has completely transformed our workflow. The efficiency gains are incredible, and the support team is always there when we need them."</p>
+                        </div>
+                        <div class="testimonial-author">
+                                                    <div class="author-avatar">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmIYjAZAJIPKcWLMmcZf3el7ResWMBdIzmew&s" alt="Sarah Johnson" loading="lazy">
+                        </div>
+                            <div class="author-info">
+                                <h4>Sarah Johnson</h4>
+                                <span>CEO, InnovateTech</span>
+                                <div class="verified-badge">
+                                    <i class="fas fa-check-circle"></i>
+                                    Verified Customer
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide testimonial-card" data-rating="5" data-featured="true">
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"The analytics dashboard alone has saved us hours of work. We can now make decisions based on real data instead of guesswork."</p>
+                        </div>
+                        <div class="testimonial-author">
+                                                    <div class="author-avatar">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=120&h=120&fit=crop&crop=face" alt="Michael Chen" loading="lazy">
+                        </div>
+                            <div class="author-info">
+                                <h4>Michael Chen</h4>
+                                <span>CTO, DataFlow Solutions</span>
+                                <div class="verified-badge">
+                                    <i class="fas fa-check-circle"></i>
+                                    Verified Customer
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide testimonial-card" data-rating="4" data-featured="false">
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <p>"Implementation was smooth, and the mobile app is fantastic. Our team can work from anywhere without any issues."</p>
+                        </div>
+                        <div class="testimonial-author">
+                                                    <div class="author-avatar">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=120&h=120&fit=crop&crop=face" alt="Emily Rodriguez" loading="lazy">
+                        </div>
+                            <div class="author-info">
+                                <h4>Emily Rodriguez</h4>
+                                <span>Operations Manager, GlobalCorp</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide testimonial-card" data-rating="5" data-featured="false">
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"The security features give us peace of mind. We handle sensitive data and TechFlow's encryption is top-notch."</p>
+                        </div>
+                        <div class="testimonial-author">
+                                                    <div class="author-avatar">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=120&h=120&fit=crop&crop=face" alt="David Lee" loading="lazy">
+                        </div>
+                            <div class="author-info">
+                                <h4>David Lee</h4>
+                                <span>Security Director, SecureBank</span>
+                                <div class="verified-badge">
+                                    <i class="fas fa-check-circle"></i>
+                                    Verified Customer
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Call to Action Section -->
+    <section id="contact" class="cta">
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <h2>Ready to Transform Your Business?</h2>
+                <p>Join thousands of businesses already using TechFlow to streamline their operations and boost productivity.</p>
+                
+                <!-- Enhanced Form with Validation -->
+                <form id="signup-form" class="cta-form" data-aos="fade-up" data-aos-delay="200">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Full Name" class="cta-input" required>
+                        <div class="input-error" id="name-error"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Email Address" class="cta-input" required>
+                        <div class="input-error" id="email-error"></div>
+                    </div>
+                    <div class="form-group">
+                        <select id="company-size" name="company-size" class="cta-input" required>
+                            <option value="">Company Size</option>
+                            <option value="1-10">1-10 employees</option>
+                            <option value="11-50">11-50 employees</option>
+                            <option value="51-200">51-200 employees</option>
+                            <option value="200+">200+ employees</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <span>Start Free Trial</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </form>
+                
+                <p class="cta-note">No credit card required • 14-day free trial • Cancel anytime</p>
+                
+                <!-- Trust Indicators -->
+                <div class="trust-indicators">
+                    <div class="trust-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>SSL Secured</span>
+                    </div>
+                    <div class="trust-item">
+                        <i class="fas fa-lock"></i>
+                        <span>Privacy Protected</span>
+                    </div>
+                    <div class="trust-item">
+                        <i class="fas fa-users"></i>
+                        <span>10,000+ Users</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-code"></i>
+                        <span>TechFlow</span>
+                    </div>
+                    <p>Revolutionary software solutions for modern businesses. Streamline operations, boost productivity, and drive growth.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">API</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Integrations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Partners</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Status</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Training</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#" id="privacy-policy-link">Privacy Policy</a></li>
+                        <li><a href="#" id="terms-link">Terms of Service</a></li>
+                        <li><a href="#" id="cookies-link">Cookie Policy</a></li>
+                        <li><a href="#">GDPR</a></li>
+                        <li><a href="#">Security</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TechFlow. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#" id="sitemap-link">Sitemap</a>
+                    <a href="#" id="accessibility-link">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Legal Modals -->
+    <div id="privacy-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Privacy Policy</h2>
+            <div class="modal-body">
+                <p>Last updated: January 2024</p>
+                <h3>Information We Collect</h3>
+                <p>We collect information you provide directly to us, such as when you create an account, subscribe to our newsletter, or contact us for support.</p>
+                <h3>How We Use Your Information</h3>
+                <p>We use the information we collect to provide, maintain, and improve our services, communicate with you, and develop new features.</p>
+                <h3>Information Sharing</h3>
+                <p>We do not sell, trade, or otherwise transfer your personal information to third parties without your consent.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="terms-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Terms of Service</h2>
+            <div class="modal-body">
+                <p>Last updated: January 2024</p>
+                <h3>Acceptance of Terms</h3>
+                <p>By accessing and using TechFlow's services, you accept and agree to be bound by the terms and provision of this agreement.</p>
+                <h3>Use License</h3>
+                <p>Permission is granted to temporarily download one copy of the materials on TechFlow's website for personal, non-commercial transitory viewing only.</p>
+                <h3>Disclaimer</h3>
+                <p>The materials on TechFlow's website are provided on an 'as is' basis. TechFlow makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
